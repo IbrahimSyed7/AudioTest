@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AudioTest</string>
+    <string name="orange">#ff9800</string>
+    <string name="black">#000000</string>
+</resources>

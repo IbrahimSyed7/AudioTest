@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    android:layout_margin="@dimen/_8sdp"
+    app:carbon_cornerRadius="@dimen/_12sdp"
+    app:carbon_stroke="#f4f4f4"
+    app:carbon_strokeWidth="@dimen/_1sdp">
+
+    <carbon.widget.ImageView
+        android:id="@+id/playImage"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_8sdp"
+        android:tag="played"
+        android:paddingLeft="@dimen/_14sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:src="@drawable/play"
+        app:carbon_cornerRadius="@dimen/_19sdp"
+        app:carbon_elevation="@dimen/_8sdp"
+        app:carbon_tint="@color/carbon_orange_a400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/playImage"
+        app:layout_constraintStart_toEndOf="@+id/playImage"
+        app:layout_constraintTop_toTopOf="@+id/playImage">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Copying Anxiety"
+            android:id="@+id/name"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="20 min ago"
+                android:textColor="@color/carbon_grey_600"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:fontFamily="sans-serif"
+                android:text="11:32"
+                android:textColor="@color/carbon_grey_600"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Publish"
+            android:textColor="@color/colorSecondary"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/next"
+            app:tint="@color/colorSecondary" />
+
+    </LinearLayout>
+</carbon.widget.ConstraintLayout>
